@@ -89,3 +89,20 @@ Khi chạy ứng dụng, bạn có thể kiểm chứng 4 tình huống dữ li�
 | **Vi phạm luật** | Tên rỗng `""`, giá âm `-5` | Banner đỏ: *"Thông tin chưa hợp lệ: tên không được để trống, giá phải >= 0."* | `ensureValid()` gọi `validate()` $\rightarrow$ gom tất cả vi phạm ném qua `ValidationException`. |
 
 > **Cơ chế chống Crash (No-Crash Guarantee)**: Sau khi bấm thử các nút lỗi, danh sách sản phẩm hợp lệ đã tải trước đó vẫn được bảo toàn nguyên vẹn trên màn hình. Người dùng có thể bấm lại nút `"Hợp lệ"` bất cứ lúc nào để tiếp tục sử dụng mà không cần khởi động lại ứng dụng.
+---
+
+## 📚 TÀI LIỆU THAM KHẢO & HỌC LIỆU
+
+1. **Học liệu môn học**:
+   * Bài giảng môn Lập trình đa nền tảng:
+     - *Chương 2*: Nền tảng ngôn ngữ Dart, Generics và Kỹ thuật xử lý lỗi.
+     - *Chương 3*: Lập trình hướng đối tượng nâng cao (OOP), Constructor, Mixins, Singleton.
+     - *Chương 4*: Bất đồng bộ với Future & Stream (tham khảo cho cơ chế async guard).
+
+2. **Tài liệu kỹ thuật chính thức từ Dart & Flutter**:
+   * [Dart Constructors Specification](https://dart.dev/language/constructors) (Named & Factory constructors).
+   * [Dart Mixins Guide](https://dart.dev/language/mixins) (Tái sử dụng tính năng không qua kế thừa).
+   * [Dart Generics & Type System](https://dart.dev/language/generics) (Generic classes, functions & constraints).
+   * [Dart Exceptions & Error Handling](https://dart.dev/language/error-handling) (try-on-catch-finally).
+   * [Flutter Error Handling Guide](https://docs.flutter.dev/testing/errors) (FlutterError, PlatformDispatcher).
+   * [Flutter App Architecture Guide](https://docs.flutter.dev/app-architecture/guide) (Repository Pattern, Domain Layer).
